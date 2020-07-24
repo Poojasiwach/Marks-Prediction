@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Marks Prediction
+	</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+    	<div class="alert alert-warning">
+			<center><h1>Marks Prediction</h1></center>
+		</div>
+		<br>
+		<form method="POST" action="/" class="form-inline">
+			<label>How many hours do you study? &nbsp;&nbsp;</label>
+			<input class="form-control" type="text" name="hours" placeholder="Hours">
+		    <button class="btn btn-primary btn-lg" type="submit">Get Score!</button>
+		</form>
+
+		{% if your_marks %}
+		<h1>Your marks: <i>{{your_marks}}</i></h1>
+		{% endif %}
+    </div>
+</body>
+</html>
